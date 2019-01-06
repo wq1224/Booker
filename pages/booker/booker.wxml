@@ -1,0 +1,25 @@
+<view>
+  <scroll-view class="table">
+    <view>
+      <view class="thead" style='width: {{bodyWidth + 20}}px'>
+        <view class='th' class='content'>Booker</view>
+      </view>
+      <scroll-view id='table-body' style='width: {{bodyWidth + 20}}px' scroll-y bindscrolltolower="loadMore">
+        <view class="body">
+          <view class='tr' wx:for="{{datas}}" wx:for-item="rows" wx:for-index="idx" wx:key="{{idx}}">
+             <view class='td ' wx:for="{{rows}}" wx:for-item="col" wx:for-index="key" wx:key="{{key}}">
+
+              <view class='content' style="width: {{columnInfo[key]}}px">{{key}}</view>
+            </view>
+            
+            <view class='td ' wx:for="{{rows}}" wx:for-item="col" wx:for-index="key" wx:key="{{col}}">
+
+              <view class='content' style="width: {{columnInfo[key]}}px">{{col}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </scroll-view>
+
+</view>

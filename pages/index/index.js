@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello Toaster Master',
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -12,7 +12,8 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
+      // url: '../logs/logs'
+      url: '../booker/booker'
     })
   },
   onLoad: function () {
@@ -50,5 +51,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  }, onGotUserInfo: function (e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
   }
 })
