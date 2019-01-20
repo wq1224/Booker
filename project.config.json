@@ -1,10 +1,10 @@
 {
-	"description": "Project configuration file",
+	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wxf98beed1115c33b4",
-	"projectname": "Booker",
+	"appid": "wxfdef7ebe2a985224",
+	"projectname": "digitalTMC",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

@@ -7,6 +7,13 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <view><button bindtap="navtotable">预订页面</button></view>
+  <view>
+    <view wx:for="{{role_data}}">
+    {{item}}
+    <button class="login-btn" bindtap="handleUserInfo">登录</button>
+    </view>
+  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
